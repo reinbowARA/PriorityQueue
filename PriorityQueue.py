@@ -70,5 +70,6 @@ class PriorityQueue:
         else:
             print("Очередь пуста!")
 
+    # Функция показывающая очередь
     def GetQueue(self):
         return self.array
