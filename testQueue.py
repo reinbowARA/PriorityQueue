@@ -1,21 +1,22 @@
 from PriorityQueue import PriorityQueue
 
-arr = []
 
-PriorityQueue.AddElement(arr, 1)
-PriorityQueue.AddElement(arr, 1)
-PriorityQueue.AddElement(arr, 2)
-PriorityQueue.AddElement(arr, 1)
-PriorityQueue.AddElement(arr, 3)
-PriorityQueue.AddElement(arr, -4)
+if __name__ == "__main__":
+    test = PriorityQueue()
+    test.AddElement(1)
+    test.AddElement(1)
+    test.AddElement(2)
+    test.AddElement(1)
+    test.AddElement(3)
+    test.AddElement(-4)
 
-print ("Массив max-кучи: " + str(arr))
+    print ("Массив max-кучи: " + str(test.GetQueue()))
 
-PriorityQueue.DeleteElement(arr, 1)
-print("После удаления элемента: " + str(arr))
+    test.DeleteElement(1)
+    print("После удаления элемента: " + str(test.GetQueue()))
 
-PriorityQueue.GetLenQueue(arr)
+    test.GetLenQueue()
 
-PriorityQueue.GetMaxElementQueue(arr)
+    test.GetMaxElementQueue()
 
-PriorityQueue.EmptyQueue(arr)
+    test.EmptyQueue()
